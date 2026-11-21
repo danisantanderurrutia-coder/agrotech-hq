@@ -221,84 +221,63 @@
   <!-- ==================== CONTENEDOR PRINCIPAL ==================== -->
   <main class="flex-1 max-w-7xl w-full mx-auto p-6 space-y-6">
 
-    <!-- BARRA DE CONTEXTO EJECUTIVO (1 LÍNEA) -->
-    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-300/70 text-xs font-mono">
-      <div class="flex flex-wrap items-center gap-2 text-slate-700">
-        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-white text-slate-900 border border-slate-300 text-[11px] font-bold shadow-sm">
-          <span class="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse"></span>
-          FUNDO MENIEL (RETIRO)
-        </span>
-        <span class="px-2 py-0.5 rounded-md bg-amber-50 text-amber-800 border border-amber-300 text-[10px] font-bold uppercase tracking-wider">
-          MODELADO PRE-LANZAMIENTO
-        </span>
-        <span class="text-slate-400">•</span>
-        <span class="text-slate-700 font-medium">24.8 ha • Tranque 18.500 m³ • Rol SII 142-88 (Referencial)</span>
-      </div>
-      <div class="flex items-center gap-3 text-slate-600 text-[11px]">
-        <span>Perímetro: <strong class="text-slate-900 font-semibold">:7770 HQ | :7777 AgriTwin</strong></span>
-        <span class="text-slate-400">•</span>
-        <span>Ecosistema: <strong class="text-emerald-700 font-bold">v3.2.0</strong> <span class="hidden md:inline text-slate-500">(Simulación Inicial)</span></span>
-      </div>
-    </div>
-
     <!-- ==================== MÓDULO 00: LANDING EJECUTIVO PRINCIPAL ==================== -->
     <section id="tab_landing" class="space-y-6">
-      <!-- Hero Split Arquitectónico -->
-      <div class="swiss-card rounded-2xl overflow-hidden border-t-4 border-t-slate-900">
-        <div class="grid grid-cols-1 lg:grid-cols-12">
-          <div class="lg:col-span-7 p-6 sm:p-8 flex flex-col justify-between space-y-5">
-            <div class="space-y-3">
-              <div class="flex flex-wrap items-center gap-2 font-mono text-[10px]">
-                <span class="px-2.5 py-0.5 rounded-full bg-slate-900 text-white font-bold">CHILE AGROTECH SpA (MODELADO)</span>
-                <span class="px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-800 border border-amber-200 font-bold">DATOS REFERENCIALES</span>
-                <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 font-bold">ECOSISTEMA v3.2.0</span>
-                <span class="px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-200 font-bold">AIR-GAPPED :7770</span>
-              </div>
-              <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-sans leading-tight">
-                Cabina de Mando Soberana & Directorio Estratégico
-              </h2>
-              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-2xl">
-                Centro privado de gobernanza corporativa, financiamiento no dilutivo (CORFO / UE / US), propiedad intelectual y control del gemelo digital biofísico <strong class="text-slate-900">AgriTwin (:7777)</strong>.
-              </p>
-            </div>
+      <!-- Hero Full-Bleed Arquitectónico (Piso 25) -->
+      <div class="swiss-card rounded-2xl overflow-hidden border-t-4 border-t-slate-900 relative min-h-[380px] sm:min-h-[420px] flex items-center">
+        <img src="assets/hero_boardroom_swiss.jpg" alt="Penthouse Boardroom AgroTech HQ" class="absolute inset-0 w-full h-full object-cover object-right">
+        <div class="absolute inset-0 bg-gradient-to-r from-white/95 via-white/90 lg:via-white/80 to-white/60 lg:to-white/5"></div>
 
-            <!-- 3 Métricas Clave en Línea -->
-            <div class="grid grid-cols-3 gap-3 font-mono">
-              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
-                <span class="text-[10px] text-slate-500 block uppercase">CHILE NO DILUTIVO</span>
-                <strong class="text-sm sm:text-base font-bold text-emerald-700">$350M+ CLP</strong>
-              </div>
-              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
-                <span class="text-[10px] text-slate-500 block uppercase">GLOBAL US / UE</span>
-                <strong class="text-sm sm:text-base font-bold text-sky-800">$120K–€2.5M</strong>
-              </div>
-              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
-                <span class="text-[10px] text-slate-500 block uppercase">SOFTWARE-FIRST</span>
-                <strong class="text-sm sm:text-base font-bold text-slate-900">$18 CAC • 91%</strong>
-              </div>
+        <div class="relative z-10 w-full lg:max-w-[60%] p-6 sm:p-8 lg:p-10 flex flex-col justify-between space-y-5">
+          <div class="space-y-3">
+            <div class="flex flex-wrap items-center gap-2 font-mono text-[10px]">
+              <span class="px-2.5 py-0.5 rounded-full bg-slate-900 text-white font-bold shadow-sm">CHILE AGROTECH SpA (MODELADO)</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-amber-50/95 text-amber-800 border border-amber-200 font-bold">DATOS REFERENCIALES</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-emerald-50/95 text-emerald-800 border border-emerald-200 font-bold">ECOSISTEMA v3.2.0</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-white/95 text-slate-700 border border-slate-200 font-bold">AIR-GAPPED :7770</span>
             </div>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-950 tracking-tight font-sans leading-tight">
+              Cabina de Mando Soberana & Directorio Estratégico
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed max-w-xl font-medium">
+              Centro privado de gobernanza corporativa, financiamiento no dilutivo (CORFO / UE / US), propiedad intelectual y control del gemelo digital biofísico <strong class="text-slate-950">AgriTwin (:7777)</strong>.
+            </p>
+          </div>
 
-            <!-- Acciones Primarias -->
-            <div class="flex flex-wrap items-center gap-2.5 pt-1 font-mono text-xs">
-              <button onclick="setTab('fondos')" class="px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold transition-all shadow-sm">
-                Explorar Fondos (CORFO / UE / US) →
-              </button>
-              <button onclick="setTab('boardroom')" class="px-4 py-2.5 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-900 border border-emerald-200 font-bold transition-all">
-                Entrar al War Room 3D
-              </button>
-              <button onclick="setTab('informes')" class="px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200 font-semibold transition-all">
-                Compilador MRV
-              </button>
+          <!-- 3 Métricas Clave en Línea -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 font-mono">
+            <div class="p-3 rounded-xl bg-white/95 backdrop-blur-sm border border-slate-200/90 shadow-sm">
+              <span class="text-[10px] text-slate-500 block uppercase">CHILE NO DILUTIVO</span>
+              <strong class="text-sm sm:text-base font-bold text-emerald-700">$350M+ CLP</strong>
+            </div>
+            <div class="p-3 rounded-xl bg-white/95 backdrop-blur-sm border border-slate-200/90 shadow-sm">
+              <span class="text-[10px] text-slate-500 block uppercase">GLOBAL US / UE</span>
+              <strong class="text-sm sm:text-base font-bold text-sky-800">$120K–€2.5M</strong>
+            </div>
+            <div class="p-3 rounded-xl bg-white/95 backdrop-blur-sm border border-slate-200/90 shadow-sm">
+              <span class="text-[10px] text-slate-500 block uppercase">SOFTWARE-FIRST</span>
+              <strong class="text-sm sm:text-base font-bold text-slate-900">$18 CAC • 91%</strong>
             </div>
           </div>
 
-          <div class="lg:col-span-5 relative min-h-[240px] lg:min-h-full bg-slate-100 border-t lg:border-t-0 lg:border-l border-slate-200 overflow-hidden">
-            <img src="assets/hero_boardroom_swiss.jpg" alt="Penthouse Boardroom AgroTech HQ" class="w-full h-full object-cover">
-            <div class="absolute bottom-3 left-3 right-3 p-2.5 rounded-lg bg-white/90 backdrop-blur-md border border-slate-200 flex items-center justify-between text-[10px] font-mono text-slate-800 shadow-sm">
-              <span class="font-bold">Piso 25 • Directorio Ejecutivo</span>
-              <span class="text-emerald-700 font-bold">8 Asesores Activos</span>
-            </div>
+          <!-- Acciones Primarias -->
+          <div class="flex flex-wrap items-center gap-2.5 pt-1 font-mono text-xs">
+            <button onclick="setTab('fondos')" class="px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold transition-all shadow-sm">
+              Explorar Fondos (CORFO / UE / US) →
+            </button>
+            <button onclick="setTab('boardroom')" class="px-4 py-2.5 rounded-xl bg-emerald-50/95 hover:bg-emerald-100 text-emerald-900 border border-emerald-200 font-bold transition-all shadow-sm">
+              Entrar al War Room 3D
+            </button>
+            <button onclick="setTab('informes')" class="px-4 py-2.5 rounded-xl bg-white/95 hover:bg-slate-100 text-slate-800 border border-slate-200 font-semibold transition-all shadow-sm">
+              Compilador MRV
+            </button>
           </div>
+        </div>
+
+        <div class="hidden lg:flex absolute bottom-4 right-4 z-10 px-3 py-1.5 rounded-lg bg-white/92 backdrop-blur-md border border-slate-200 items-center gap-3 text-[10px] font-mono text-slate-800 shadow-sm">
+          <span class="font-bold">Piso 25 • Directorio Ejecutivo</span>
+          <span class="text-slate-300">•</span>
+          <span class="text-emerald-700 font-bold">8 Asesores Activos</span>
         </div>
       </div>
 
