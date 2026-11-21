@@ -1,0 +1,6 @@
+.DS_Store
+*.bak
+*.pre_clean_bak
+node_modules/
+.env
+.env.*
