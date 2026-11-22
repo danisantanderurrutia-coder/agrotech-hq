@@ -184,9 +184,6 @@
 
     <!-- Navegación de Módulos HQ (Centrada) -->
     <nav class="hq-nav flex flex-wrap items-center justify-center gap-1 p-1 rounded-lg border font-mono text-[11px] lg:justify-self-center">
-      <button onclick="setTab('landing')" id="tabBtn_landing" class="hq-tab-active px-2.5 py-1 rounded-md border shadow-sm transition-all flex items-center gap-1.5 whitespace-nowrap">
-        <span>Inicio</span>
-      </button>
       <button onclick="setTab('fondos')" id="tabBtn_fondos" class="hq-tab-inactive px-2.5 py-1 rounded-md border border-transparent transition-all flex items-center gap-1.5 font-medium whitespace-nowrap">
         <span class="text-[10px] font-bold opacity-70">01</span>
         <span>Fondos</span>
@@ -210,10 +207,6 @@
       <button onclick="setTab('boardroom')" id="tabBtn_boardroom" class="hq-tab-inactive px-2.5 py-1 rounded-md border border-transparent transition-all flex items-center gap-1.5 font-medium whitespace-nowrap">
         <span class="text-[10px] font-bold opacity-70">06</span>
         <span>War Room 3D</span>
-      </button>
-      <button onclick="setTab('infra')" id="tabBtn_infra" class="hq-tab-inactive px-2.5 py-1 rounded-md border border-transparent transition-all flex items-center gap-1.5 font-medium whitespace-nowrap">
-        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-        <span>Infra</span>
       </button>
     </nav>
   </header>
@@ -399,8 +392,6 @@
           <span class="text-xs font-mono font-bold uppercase tracking-wider text-slate-800">Acceso Directo al Directorio (8 Asesores) & Gobernanza</span>
           <div class="flex items-center gap-2 font-mono text-[11px]">
             <button onclick="setTab('gobernanza')" class="text-sky-700 font-bold hover:underline">02 Gobernanza & IP →</button>
-            <span class="text-slate-300">|</span>
-            <button onclick="setTab('infra')" class="text-slate-600 font-bold hover:underline">Infra (:7770/:7777) →</button>
           </div>
         </div>
         <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2 font-mono text-[11px]">
@@ -413,6 +404,15 @@
           <button onclick="triggerAdvisorModal('dossier', 6)" class="p-2.5 rounded-xl bg-slate-50 hover:bg-orange-50 border border-slate-200 hover:border-orange-300 text-left transition-all"><strong class="text-slate-900 block">#07 B2B</strong><span class="text-[10px] text-slate-500">Viñas / Setup</span></button>
           <button onclick="triggerAdvisorModal('dossier', 7)" class="p-2.5 rounded-xl bg-slate-50 hover:bg-pink-50 border border-slate-200 hover:border-pink-300 text-left transition-all"><strong class="text-slate-900 block">#08 Growth</strong><span class="text-[10px] text-slate-500">WhatsApp B2C</span></button>
         </div>
+      </div>
+
+      <!-- Pie compacto con acceso discreto a Infraestructura -->
+      <div class="flex items-center justify-between pt-2 border-t border-slate-200/80 text-[10px] font-mono text-slate-500">
+        <span>Chile AgroTech SpA • Consola Ejecutiva (Modelado Pre-Lanzamiento)</span>
+        <button onclick="setTab('infra')" id="landingInfraBtn" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white hover:bg-slate-50 text-slate-600 hover:text-slate-900 border border-slate-200 shadow-sm transition-all">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span>Infra</span>
+        </button>
       </div>
     </section>
 
@@ -1933,6 +1933,7 @@
           </a>
         </div>
       </div>
+
     </section>
 
     <!-- ==================== PESTAÑA: PENTHOUSE BOARDROOM 3D & ADVISORY WAR ROOM ==================== -->
@@ -2206,6 +2207,7 @@
           </div>
         </div>
       </div>
+
     </section>
 
     <!-- MODAL DE ACCIONES EJECUTIVAS DEL DIRECTORIO (DOSSIER / ENSAYO) -->
@@ -2328,6 +2330,7 @@
           </div>
         </div>
       </div>
+
     </section>
 
     <!-- ==================== PESTAÑA 3: COOPERATIVA ==================== -->
@@ -2428,6 +2431,7 @@
 
         </div>
       </div>
+
     </section>
 
     <!-- ==================== PESTAÑA 4: CONSOLA DE AGENTES ==================== -->
@@ -2500,6 +2504,7 @@
           </div>
         </div>
       </div>
+
     </section>
 
     <!-- ==================== PESTAÑA: RADIOGRAFÍA HOLDING AGROTECH ==================== -->
