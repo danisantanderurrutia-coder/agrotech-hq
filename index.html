@@ -501,8 +501,7 @@
         <!-- Sub-filtro limpio por tipo de financiamiento -->
         <div class="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-slate-200">
           <div class="inline-flex flex-wrap items-center gap-1 p-1 rounded-lg bg-slate-100 border border-slate-200 font-mono text-[11px]">
-            <button onclick="filterFondosScope('all')" id="fondosFilter_all" class="px-3 py-1 rounded-md bg-white text-slate-900 font-bold border border-slate-200 shadow-sm transition-all">Todos</button>
-            <button onclick="filterFondosScope('corfo')" id="fondosFilter_corfo" class="px-3 py-1 rounded-md text-slate-600 hover:text-slate-900 transition-all">CORFO & Chile</button>
+            <button onclick="filterFondosScope('corfo')" id="fondosFilter_corfo" class="px-3 py-1 rounded-md bg-white text-slate-900 font-bold border border-slate-200 shadow-sm transition-all">CORFO & Chile</button>
             <button onclick="filterFondosScope('us')" id="fondosFilter_us" class="px-3 py-1 rounded-md text-slate-600 hover:text-slate-900 transition-all">Fondos Gringos (US)</button>
             <button onclick="filterFondosScope('eu')" id="fondosFilter_eu" class="px-3 py-1 rounded-md text-slate-600 hover:text-slate-900 transition-all">Fondos Europeos (UE)</button>
             <button onclick="filterFondosScope('captable')" id="fondosFilter_captable" class="px-3 py-1 rounded-md text-slate-600 hover:text-slate-900 transition-all">Cap Table</button>
@@ -860,7 +859,7 @@
       </div>
 
       <!-- SECCIÓN B: FONDOS GRINGOS (US VENTURE CAPITAL, ACELERADORAS & GRANTS) -->
-      <div id="fondosScope_us" class="space-y-3">
+      <div id="fondosScope_us" class="space-y-3 hidden">
         <div class="flex flex-wrap items-center justify-between gap-2 text-xs font-mono text-slate-500 px-1 pt-2">
           <span class="uppercase tracking-wider font-bold text-slate-800 flex items-center gap-2">
             <span class="w-2 h-2 rounded-full bg-sky-600"></span>
@@ -1023,7 +1022,7 @@
       </div>
 
       <!-- SECCIÓN C: FONDOS EUROPEOS (UE GRANTS, EUDR, COPERNICUS & VCs) -->
-      <div id="fondosScope_eu" class="space-y-3">
+      <div id="fondosScope_eu" class="space-y-3 hidden">
         <div class="flex flex-wrap items-center justify-between gap-2 text-xs font-mono text-slate-500 px-1 pt-2">
           <span class="uppercase tracking-wider font-bold text-slate-800 flex items-center gap-2">
             <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
@@ -1185,7 +1184,7 @@
       </div>
 
       <!-- CAP TABLE & LEDGER DE VESTING (DESPLEGABLE ELEGANTE) -->
-      <details id="fondosScope_captable" class="group swiss-card rounded-2xl overflow-hidden" open>
+      <details id="fondosScope_captable" class="group swiss-card rounded-2xl overflow-hidden hidden" open>
         <summary class="p-4 sm:p-5 cursor-pointer flex items-center justify-between gap-4 select-none">
           <div class="flex items-center gap-3">
             <div class="w-9 h-9 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center font-mono font-bold text-xs text-amber-800 shrink-0">
@@ -3250,13 +3249,12 @@ flowchart TD
       };
 
       const showMap = {
-        all: ['advisors', 'corfo', 'us', 'eu', 'captable'],
         corfo: ['advisors', 'corfo'],
         us: ['advisors', 'us'],
         eu: ['advisors', 'eu'],
         captable: ['captable']
       };
-      const visible = showMap[scope] || showMap.all;
+      const visible = showMap[scope] || showMap.corfo;
 
       Object.keys(blocks).forEach(k => {
         if (blocks[k]) {
@@ -3265,7 +3263,7 @@ flowchart TD
         }
       });
 
-      ['all', 'corfo', 'us', 'eu', 'captable'].forEach(btnKey => {
+      ['corfo', 'us', 'eu', 'captable'].forEach(btnKey => {
         const btn = document.getElementById(`fondosFilter_${btnKey}`);
         if (!btn) return;
         if (btnKey === scope) {
