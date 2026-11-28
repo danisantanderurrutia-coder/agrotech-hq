@@ -212,6 +212,10 @@
         <span class="text-[10px] font-bold opacity-70">07</span>
         <span>Radiografía</span>
       </button>
+      <button onclick="setTab('equipo')" id="tabBtn_equipo" class="hq-tab-inactive px-2.5 py-1 rounded-md border border-transparent transition-all flex items-center gap-1.5 font-medium whitespace-nowrap">
+        <span class="text-[10px] font-bold opacity-70">08</span>
+        <span>Equipo</span>
+      </button>
     </nav>
   </header>
 
@@ -2051,29 +2055,29 @@
         <!-- Tensiones Estructurales -->
         <div class="lg:col-span-7 swiss-card rounded-2xl p-5 space-y-3">
           <div class="flex items-center justify-between border-b border-slate-200 pb-2.5">
-            <h3 class="text-sm font-bold text-slate-900 font-mono uppercase tracking-wider">5 Tensiones Estructurales Sin Resolver (Decisiones Urgentes)</h3>
-            <span class="px-2 py-0.5 rounded bg-amber-50 text-amber-800 border border-amber-200 text-[10px] font-mono font-bold">REQUIERE DEFINICIÓN</span>
+            <h3 class="text-sm font-bold text-slate-900 font-mono uppercase tracking-wider">Mapa de Tensiones (Cruce Drive + Estrategia Producto)</h3>
+            <span class="px-2 py-0.5 rounded bg-amber-50 text-amber-800 border border-amber-200 text-[10px] font-mono font-bold">2 ENCARRILADAS • 3 POR CERRAR</span>
           </div>
           <div class="space-y-2.5 text-xs text-slate-700 leading-relaxed">
-            <div class="p-3 rounded-xl bg-amber-50/50 border border-amber-200">
-              <strong class="text-slate-900 block">Tensión 1 — 100% Software vs Hardware / Sensores en Terreno</strong>
-              <em>Pablo (Q.E.P.D.)</em> exige congelar hardware e ir 100% SaaS satelital (&gt;80% margen). <em>Wladimir</em> habla de "equipo + plataforma" (venta/comodato de sensores). <em>Francisco</em> prepara Cliente 0 evaluando sensores existentes (LoRaWAN/PLC) y <em>Daniel</em> propone kits Plug-and-Play vía Luis/Rüdiger sin asumir inventario propio. <strong>Decisión:</strong> Software-First obligatorio, con hardware solo como integrador sin stock ni garantía asumida por AgroTech.
+            <div class="p-3 rounded-xl bg-emerald-50/50 border border-emerald-200">
+              <strong class="text-slate-900 block">Tensión 1 — Software vs Hardware <span class="text-emerald-700">[ENCARRILADA EN 3 FASES]</span></strong>
+              Cruce con <em>AT Branding Strategy / ATwin Productos</em>: <strong>Fase 1 (Hoy)</strong> es 100% Software & Micro-SaaS (<em>AgroAlerta WhatsApp</em> + <em>Informes Express</em> + <em>BV Agua/Fuego/Pasaporte</em>) con $0 inventario. <strong>Fase 2</strong> vende Hardware IoT (<em>Kits KioT / LoRaWAN</em>) solo como upgrade a clientes que ya confían en el software. Falta alinear el discurso comercial de Wladimir a esta secuencia.
             </div>
             <div class="p-3 rounded-xl bg-amber-50/50 border border-amber-200">
-              <strong class="text-slate-900 block">Tensión 2 — Custodia de IP: Matriz Externa vs 100% dentro de la SpA</strong>
-              <em>Daniel (Boletín 1)</em> propone SpA matriz que custodia IP y licencia a la operativa. <em>Pablo</em> rechaza licencias externas y pide 100% IP en la SpA; <em>Wladimir</em> también asume IP a nombre de la empresa (requisito clave para CORFO/VCs). <strong>Decisión:</strong> Resolver si habrá holding o SpA única con cesión de IP + cláusula de licencia/reversión antes de postular a CORFO.
+              <strong class="text-slate-900 block">Tensión 2 — Custodia de IP & Naming <span class="text-amber-800">[POR DEFINIR]</span></strong>
+              <em>Daniel (Boletín 1 / AT Equipo)</em> propone SpA matriz que custodia IP y licencia a la operativa; <em>Pablo</em> y <em>Wladimir</em> plantean 100% IP dentro de la SpA para ganar CORFO/VCs. Además sigue pendiente cerrar el <strong>Naming oficial</strong> (tras descartar <em>AgroTech</em>, <em>Buen Vivir</em> y <em>Solarpunks</em>).
             </div>
-            <div class="p-3 rounded-xl bg-amber-50/50 border border-amber-200">
-              <strong class="text-slate-900 block">Tensión 3 — Quién es realmente el Primer Cliente (Segmento Año 1)</strong>
-              Coexisten 4 focos distintos: <strong>Cliente 0 de Francisco</strong> (3.000 m², +100 frutales jóvenes mixtos), <strong>Daniel</strong> (parceleros e informes rápidos + clientes de Luis), <strong>Wladimir</strong> (medianos con riego tecnificado, 1 solo segmento año 1) y <strong>Pablo</strong> (B2B exportadoras/agrónomos/bancos). <strong>Decisión:</strong> Usar Cliente 0 como laboratorio técnico controlado (no como segmento comercial definitivo) y elegir 1 único ICP pagador.
-            </div>
-            <div class="p-3 rounded-xl bg-rose-50/60 border border-rose-200">
-              <strong class="text-slate-900 block">Tensión 4 — Vacío de Infraestructura TI & Operación tras la partida de Pablo (Q.E.P.D.)</strong>
-              En los documentos, <em>Pablo</em> cumplía dos roles críticos: <strong>Cloud/APIs/WhatsApp</strong> y <strong>articulación logística en terreno</strong>. Hoy nadie en la matriz declarada cubre explícitamente backend cloud, integraciones Modbus/PLC/LoRaWAN ni envío productivo WhatsApp API.
+            <div class="p-3 rounded-xl bg-emerald-50/50 border border-emerald-200">
+              <strong class="text-slate-900 block">Tensión 3 — Primer Cliente & Embudo <span class="text-emerald-700">[ENCARRILADA VÍA DATA FLYWHEEL]</span></strong>
+              <strong>AgroAlerta (WhatsApp en 60s)</strong> actúa como puerta de entrada de fricción cero para capturar polígono y cultivo; luego <em>Feature Stacking</em> hacia B2B/Twin. <strong>Cliente 0</strong> (Francisco: 3.000 m², +100 frutales) sirve como laboratorio técnico controlado de 60–90 días, paralelo a las 20 entrevistas del segmento pagador Año 1.
             </div>
             <div class="p-3 rounded-xl bg-sky-50/60 border border-sky-200">
-              <strong class="text-slate-900 block">Tensión 5 — Timing de Ventas vs Bases CORFO Semilla Inicia</strong>
-              <em>Wladimir</em> advierte con precisión (pág. 14): <strong>Semilla Inicia exige no tener ventas previas</strong> (tasa de selección ~1,6%: 50 de 3.074). Cobrar un piloto formal o emitir factura antes de tiempo inhabilita la postulación a Inicia.
+              <strong class="text-slate-900 block">Tensión 4 — Silla TI / Cloud tras Pablo (Q.E.P.D.) <span class="text-sky-800">[CANDIDATO IDENTIFICADO: RUDI]</span></strong>
+              <strong>Rüdiger Kaatz ("Rudi") es Ingeniero Informático</strong> además de especialista off-grid/Living Lab en Parral. Tiene el perfil puente ideal para tomar <strong>Cloud, APIs, integración IoT (LoRaWAN/Modbus/PLC en Cliente 0) y envío WhatsApp API</strong>. Falta validar con él: (1) horas semanales disponibles, (2) stack Cloud Fase 1 y (3) priorizar software antes de hardware.
+            </div>
+            <div class="p-3 rounded-xl bg-amber-50/50 border border-amber-200">
+              <strong class="text-slate-900 block">Tensión 5 — Timing de Ventas vs CORFO Semilla Inicia <span class="text-amber-800">[ALERTA ACTIVA]</span></strong>
+              <em>Wladimir</em> advierte (pág. 14): <strong>Semilla Inicia exige no tener ventas previas</strong> (~1,6% selección). No facturar piloto Cliente 0 ni informes antes de decidir la postulación a Inicia.
             </div>
           </div>
         </div>
@@ -2088,18 +2092,18 @@
         <div class="grid grid-cols-1 md:grid-cols-5 gap-3 font-mono text-xs">
           <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
             <span class="text-[10px] font-bold text-slate-500">ACUERDO 01</span>
-            <strong class="text-slate-900 block">Postura Producto</strong>
-            <p class="text-[11px] text-slate-600 font-sans">Fijar Software-First + compatibilidad con hardware de terceros (sin inventario propio).</p>
+            <strong class="text-slate-900 block">Alinear 3 Fases</strong>
+            <p class="text-[11px] text-slate-600 font-sans">Confirmar Fase 1 Software-First (AgroAlerta WhatsApp) sin inventario de hardware.</p>
           </div>
           <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
             <span class="text-[10px] font-bold text-slate-500">ACUERDO 02</span>
             <strong class="text-slate-900 block">Protocolo Cliente 0</strong>
-            <p class="text-[11px] text-slate-600 font-sans">Ejecutar checklist de Francisco con plazo de 60-90 días, sin comprometer facturación pre-CORFO.</p>
+            <p class="text-[11px] text-slate-600 font-sans">Ejecutar checklist de Francisco a 60–90 días sin comprometer facturación pre-CORFO.</p>
           </div>
           <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
             <span class="text-[10px] font-bold text-slate-500">ACUERDO 03</span>
-            <strong class="text-slate-900 block">Cobertura TI / Cloud</strong>
-            <p class="text-[11px] text-slate-600 font-sans">Reasignar las funciones Cloud/APIs/WhatsApp que estaban en Pablo o definir reemplazo técnico.</p>
+            <strong class="text-slate-900 block">Rol TI de Rudi</strong>
+            <p class="text-[11px] text-slate-600 font-sans">Validar horas/semana y stack Cloud de Rüdiger (Ing. Informático) para APIs, IoT y WhatsApp.</p>
           </div>
           <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
             <span class="text-[10px] font-bold text-slate-500">ACUERDO 04</span>
@@ -2108,8 +2112,210 @@
           </div>
           <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
             <span class="text-[10px] font-bold text-slate-500">ACUERDO 05</span>
-            <strong class="text-slate-900 block">SpA & Pacto de IP</strong>
-            <p class="text-[11px] text-slate-600 font-sans">Cerrar dedicación real de cada miembro, vesting 4y/1y y estructura legal compatible con CORFO.</p>
+            <strong class="text-slate-900 block">Naming, IP & SpA</strong>
+            <p class="text-[11px] text-slate-600 font-sans">Cerrar nombre oficial, dedicación por miembro, vesting 4y/1y y estructura compatible con CORFO.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PESTAÑA 08: EQUIPO & RAMAS OPERATIVAS ==================== -->
+    <section id="tab_equipo" class="space-y-6 hidden">
+      <!-- Header Ejecutivo -->
+      <div class="p-6 rounded-2xl swiss-card border-t-4 border-t-emerald-700 space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <div class="flex flex-wrap items-center gap-2 font-mono text-[10px] mb-2">
+              <span class="px-2.5 py-0.5 rounded-full bg-emerald-700 text-white font-bold">08 • EQUIPO FUNDADOR & ASESORES</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-800 border border-slate-200 font-bold">ALEMANIA • SANTIAGO • MAULE SUR (PARRAL)</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-800 border border-amber-200 font-bold">MODELADO PRE-CONSTITUCIÓN</span>
+            </div>
+            <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight font-sans">
+              Estructura del Equipo, Perfiles y Responsabilidades
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-3xl">
+              Mapa operativo consolidado desde los boletines de dirección, la formalización SpA y las capacidades técnicas reales de cada integrante en las 4 ramas del proyecto.
+            </p>
+          </div>
+          <button onclick="setTab('radiografia')" class="px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-mono text-xs font-bold shadow-sm transition-all">
+            Ver 07 Radiografía Drive →
+          </button>
+        </div>
+      </div>
+
+      <!-- Tarjetas de Integrantes -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- 1. Daniel Santander -->
+        <div class="swiss-card rounded-2xl p-5 space-y-3 border-t-4 border-t-slate-900">
+          <div class="flex items-start justify-between gap-2">
+            <div>
+              <span class="text-[10px] font-mono font-bold uppercase text-emerald-700">Fundador • CTO & Custodia IP</span>
+              <h3 class="text-base font-extrabold text-slate-900">Daniel Santander Urrutia</h3>
+              <span class="text-[11px] font-mono text-slate-500">Geofísico • Base Alemania / Maule</span>
+            </div>
+            <span class="px-2 py-0.5 rounded bg-slate-900 text-white text-[10px] font-mono font-bold shrink-0">CORE IP</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Arquitectura científica y del Gemelo Digital (<strong>AgriTwin</strong>): modelos biofísicos FAO-56, balance hídrico, heladas catabáticas (ColdFlow), procesamiento Sentinel-2 / DEM / AGROMET, Ficha Técnica Digital y nexo estratégico con Europa (EUDR / Eurostars).
+          </p>
+          <div class="pt-2 border-t border-slate-200 flex flex-wrap gap-1.5 font-mono text-[10px]">
+            <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700">Motor Biofísico</span>
+            <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700">AgriTwin 3D</span>
+            <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700">Custodia IP</span>
+          </div>
+        </div>
+
+        <!-- 2. Wladimir Gutiérrez -->
+        <div class="swiss-card rounded-2xl p-5 space-y-3 border-t-4 border-t-sky-700">
+          <div class="flex items-start justify-between gap-2">
+            <div>
+              <span class="text-[10px] font-mono font-bold uppercase text-sky-700">Socio • Finanzas & Gobernanza</span>
+              <h3 class="text-base font-extrabold text-slate-900">Wladimir Gutiérrez ("Nene")</h3>
+              <span class="text-[11px] font-mono text-slate-500">Ingeniero Civil Industrial • Chile</span>
+            </div>
+            <span class="px-2 py-0.5 rounded bg-sky-800 text-white text-[10px] font-mono font-bold shrink-0">RAMA 2 & LEGAL</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Estructuración de la SpA, pacto de socios, modelo de costos/precios, liderazgo en postulaciones públicas (CORFO Semilla Inicia/Expande, FIA) y prospección B2B en agroindustrias, viñas y frutícolas medianas.
+          </p>
+          <div class="pt-2 border-t border-slate-200 flex flex-wrap gap-1.5 font-mono text-[10px]">
+            <span class="px-2 py-0.5 rounded bg-sky-50 text-sky-800">SpA & Pacto</span>
+            <span class="px-2 py-0.5 rounded bg-sky-50 text-sky-800">CORFO / FIA</span>
+            <span class="px-2 py-0.5 rounded bg-sky-50 text-sky-800">Ventas B2B</span>
+          </div>
+        </div>
+
+        <!-- 3. Francisco Ipinza -->
+        <div class="swiss-card rounded-2xl p-5 space-y-3 border-t-4 border-t-amber-600">
+          <div class="flex items-start justify-between gap-2">
+            <div>
+              <span class="text-[10px] font-mono font-bold uppercase text-amber-700">Socio • Comercial & Cliente 0</span>
+              <h3 class="text-base font-extrabold text-slate-900">Francisco Ipinza ("Pancho")</h3>
+              <span class="text-[11px] font-mono text-slate-500">Ingeniero Comercial • Chile</span>
+            </div>
+            <span class="px-2 py-0.5 rounded bg-amber-700 text-white text-[10px] font-mono font-bold shrink-0">RAMA 2</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Dirección comercial, apertura de cuentas B2B/loteos y articulación directa del piloto <strong>Cliente 0</strong> (levantamiento técnico-agronómico de 3.000 m² / +100 frutales, reglas de piloto 60–90 días y entrevistas de descubrimiento en campo).
+          </p>
+          <div class="pt-2 border-t border-slate-200 flex flex-wrap gap-1.5 font-mono text-[10px]">
+            <span class="px-2 py-0.5 rounded bg-amber-50 text-amber-800">Cliente 0</span>
+            <span class="px-2 py-0.5 rounded bg-amber-50 text-amber-800">Convenios / Viñas</span>
+            <span class="px-2 py-0.5 rounded bg-amber-50 text-amber-800">20 Entrevistas</span>
+          </div>
+        </div>
+
+        <!-- 4. Rüdiger Kaatz -->
+        <div class="swiss-card rounded-2xl p-5 space-y-3 border-t-4 border-t-cyan-700">
+          <div class="flex items-start justify-between gap-2">
+            <div>
+              <span class="text-[10px] font-mono font-bold uppercase text-cyan-800">Infraestructura TI / IoT & Living Lab</span>
+              <h3 class="text-base font-extrabold text-slate-900">Rüdiger Kaatz ("Rudi")</h3>
+              <span class="text-[11px] font-mono text-slate-500">Ingeniero Informático • Base Parral</span>
+            </div>
+            <span class="px-2 py-0.5 rounded bg-cyan-800 text-white text-[10px] font-mono font-bold shrink-0">RAMA 1 & TI</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            <strong>Ingeniero Informático</strong> y especialista en autonomía energética (baterías LiFePO4/litio reciclado, sistemas anti-incendios) con predio propio como <strong>Living Lab</strong> en Parral. Candidato directo a cubrir la capa Cloud, APIs, integración IoT (Modbus/LoRaWAN/PLC) y puente WhatsApp tras la partida de Pablo.
+          </p>
+          <div class="pt-2 border-t border-slate-200 flex flex-wrap gap-1.5 font-mono text-[10px]">
+            <span class="px-2 py-0.5 rounded bg-cyan-50 text-cyan-900">Ing. Informática</span>
+            <span class="px-2 py-0.5 rounded bg-cyan-50 text-cyan-900">Cloud / IoT / APIs</span>
+            <span class="px-2 py-0.5 rounded bg-cyan-50 text-cyan-900">Living Lab Parral</span>
+          </div>
+        </div>
+
+        <!-- 5. Cristian Alberto -->
+        <div class="swiss-card rounded-2xl p-5 space-y-3 border-t-4 border-t-indigo-600">
+          <div class="flex items-start justify-between gap-2">
+            <div>
+              <span class="text-[10px] font-mono font-bold uppercase text-indigo-700">Diseño UX/UI & Front-End</span>
+              <h3 class="text-base font-extrabold text-slate-900">Cristian Alberto ("Cantuarias")</h3>
+              <span class="text-[11px] font-mono text-slate-500">Diseño de Interacción & Juegos</span>
+            </div>
+            <span class="px-2 py-0.5 rounded bg-indigo-700 text-white text-[10px] font-mono font-bold shrink-0">RAMA 3</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Co-diseño de producto centrado en el agricultor real (taller <em>AgroAlerta</em>): experiencia Mobile-First de alta legibilidad, flujos breves de 1 tarea, jerarquía de alertas críticas y mecánicas visuales claras para el gemelo digital. Modalidad abierta: hitos o vesting (5%–10% operativo).
+          </p>
+          <div class="pt-2 border-t border-slate-200 flex flex-wrap gap-1.5 font-mono text-[10px]">
+            <span class="px-2 py-0.5 rounded bg-indigo-50 text-indigo-800">UX Mobile-First</span>
+            <span class="px-2 py-0.5 rounded bg-indigo-50 text-indigo-800">AgroAlerta UI</span>
+            <span class="px-2 py-0.5 rounded bg-indigo-50 text-indigo-800">Front-End</span>
+          </div>
+        </div>
+
+        <!-- 6. Luis -->
+        <div class="swiss-card rounded-2xl p-5 space-y-3 border-t-4 border-t-emerald-600">
+          <div class="flex items-start justify-between gap-2">
+            <div>
+              <span class="text-[10px] font-mono font-bold uppercase text-emerald-700">Terreno, Cámaras & Drones</span>
+              <h3 class="text-base font-extrabold text-slate-900">Luis ("Lápiz")</h3>
+              <span class="text-[11px] font-mono text-slate-500">Asesor Técnico Off-Grid • Parral</span>
+            </div>
+            <span class="px-2 py-0.5 rounded bg-emerald-700 text-white text-[10px] font-mono font-bold shrink-0">RAMA 1</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Despliegue físico en campo en zona Parral/Maule: montaje de cámaras, paneles solares, vuelos/operación con drones y cartera existente de clientes de terreno lista para <em>upgrade</em> a monitoreo digital. Modalidad abierta: socio de campo (vesting) o contratista preferente.
+          </p>
+          <div class="pt-2 border-t border-slate-200 flex flex-wrap gap-1.5 font-mono text-[10px]">
+            <span class="px-2 py-0.5 rounded bg-emerald-50 text-emerald-800">Cámaras & Drones</span>
+            <span class="px-2 py-0.5 rounded bg-emerald-50 text-emerald-800">Paneles Solares</span>
+            <span class="px-2 py-0.5 rounded bg-emerald-50 text-emerald-800">Red Parral</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Legado Pablo QEPD + Matriz de Cobertura -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+        <div class="lg:col-span-5 swiss-card rounded-2xl p-5 space-y-3 border-l-4 border-l-slate-700">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-mono font-bold uppercase text-slate-600">Memoria & Base Arquitectónica</span>
+            <span class="px-2 py-0.5 rounded bg-slate-800 text-white text-[10px] font-mono font-bold">Q.E.P.D.</span>
+          </div>
+          <h3 class="text-sm font-extrabold text-slate-900">Pablo — Legado B2B y Viabilidad TI</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Autor del documento fundacional <em>Estructura B2B y Viabilidad TI</em>. Dejó trazados cuatro pilares que siguen guiando a la empresa: (1) operar <strong>100% Software-First</strong> en Fase 1 (&gt;80% margen sin stock), (2) apuntar a exportación con el <strong>Pasaporte Verde UE</strong>, (3) apalancarse en <strong>créditos Cloud $0</strong> (AWS/Google) y (4) mantener la arquitectura conectada con WhatsApp para el cliente final. Su rol técnico en Cloud/APIs se reasigna ahora hacia la evaluación con Rüdiger.
+          </p>
+        </div>
+
+        <div class="lg:col-span-7 swiss-card rounded-2xl p-5 space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+            <h3 class="text-sm font-bold text-slate-900 font-mono uppercase tracking-wider">Cobertura Actual de las 4 Ramas Operativas</h3>
+            <span class="text-[10px] font-mono text-slate-500">Vesting estándar propuesto: 4 años / 1 año cliff</span>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs font-mono">
+              <thead>
+                <tr class="border-b border-slate-200 text-slate-500 text-[10px] uppercase">
+                  <th class="py-2 pr-3">Rama</th>
+                  <th class="py-2 pr-3">Liderazgo</th>
+                  <th class="py-2">Estado / Pendiente</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100 text-slate-700 font-sans">
+                <tr>
+                  <td class="py-2 pr-3 font-mono font-bold text-[11px] text-slate-900">1. Terreno & Living Lab</td>
+                  <td class="py-2 pr-3">Luis + Rüdiger (Parral)</td>
+                  <td class="py-2 text-emerald-700 font-medium">Cubierta (definir modalidad contratista vs vesting de Luis)</td>
+                </tr>
+                <tr>
+                  <td class="py-2 pr-3 font-mono font-bold text-[11px] text-slate-900">2. Comercial & Finanzas</td>
+                  <td class="py-2 pr-3">Wladimir + Francisco</td>
+                  <td class="py-2 text-amber-800 font-medium">Activa (cerrar 20 entrevistas + alinear discurso Fase 1 SaaS)</td>
+                </tr>
+                <tr>
+                  <td class="py-2 pr-3 font-mono font-bold text-[11px] text-slate-900">3. Producto UX/UI</td>
+                  <td class="py-2 pr-3">Cristian Alberto + Daniel</td>
+                  <td class="py-2 text-emerald-700 font-medium">Cubierta (definir modalidad por hitos vs vesting 5%–10%)</td>
+                </tr>
+                <tr>
+                  <td class="py-2 pr-3 font-mono font-bold text-[11px] text-slate-900">4. Core IP & Cloud/IoT</td>
+                  <td class="py-2 pr-3">Daniel (Biofísica) + Rüdiger (TI)</td>
+                  <td class="py-2 text-sky-800 font-medium">Por confirmar dedicación semanal de Rudi en APIs/Cloud/WhatsApp</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -3526,7 +3732,7 @@ flowchart TD
 
     function setTab(tab) {
       currentTab = tab;
-      const allTabs = ['landing', 'fondos', 'gobernanza', 'ciencia', 'comercial', 'informes', 'boardroom', 'radiografia', 'infra', 'holding', 'spa', 'coop', 'obsidian', 'agents'];
+      const allTabs = ['landing', 'fondos', 'gobernanza', 'ciencia', 'comercial', 'informes', 'boardroom', 'radiografia', 'equipo', 'infra', 'holding', 'spa', 'coop', 'obsidian', 'agents'];
       
       allTabs.forEach(t => {
         const btn = document.getElementById(`tabBtn_${t}`);
