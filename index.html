@@ -208,6 +208,10 @@
         <span class="text-[10px] font-bold opacity-70">06</span>
         <span>War Room 3D</span>
       </button>
+      <button onclick="setTab('radiografia')" id="tabBtn_radiografia" class="hq-tab-inactive px-2.5 py-1 rounded-md border border-transparent transition-all flex items-center gap-1.5 font-medium whitespace-nowrap">
+        <span class="text-[10px] font-bold opacity-70">07</span>
+        <span>Radiografía</span>
+      </button>
     </nav>
   </header>
 
@@ -391,6 +395,8 @@
         <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200 pb-2.5">
           <span class="text-xs font-mono font-bold uppercase tracking-wider text-slate-800">Acceso Directo al Directorio (8 Asesores) & Gobernanza</span>
           <div class="flex items-center gap-2 font-mono text-[11px]">
+            <button onclick="setTab('radiografia')" class="text-emerald-700 font-bold hover:underline">07 Radiografía Drive (6 PDFs) →</button>
+            <span class="text-slate-300">|</span>
             <button onclick="setTab('gobernanza')" class="text-sky-700 font-bold hover:underline">02 Gobernanza & IP →</button>
           </div>
         </div>
@@ -1870,6 +1876,245 @@
       </details>
     </section>
 
+    <!-- ==================== PESTAÑA 07: RADIOGRAFÍA EMPRESARIAL (DRIVE OFICIAL) ==================== -->
+    <section id="tab_radiografia" class="space-y-6 hidden">
+      <!-- Header Ejecutivo -->
+      <div class="p-6 rounded-2xl swiss-card border-t-4 border-t-slate-900 space-y-4">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+          <div>
+            <div class="flex flex-wrap items-center gap-2 font-mono text-[10px] mb-2">
+              <span class="px-2.5 py-0.5 rounded-full bg-slate-900 text-white font-bold">07 • RADIOGRAFÍA DE EMPRESA</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 font-bold">6 DOCUMENTOS DE DRIVE INTEGRADOS</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-800 border border-amber-200 font-bold">DIAGNÓSTICO PRE-CONSTITUCIÓN</span>
+            </div>
+            <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight font-sans">
+              Radiografía Interna: En lo que estamos como empresa
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-3xl">
+              Consolidación de las 5 carpetas de trabajo del equipo (<strong>Daniel, Wladimir, Francisco, Cristian Alberto y legado técnico de Pablo Q.E.P.D.</strong>) con acceso directo a cada PDF y el diagnóstico cruzado de consensos, brechas y decisiones urgentes.
+            </p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2 shrink-0 font-mono text-xs">
+            <a href="https://drive.google.com/drive/u/2/folders/1rDOy8rpe9B4YRtjJqN-7bRN6o1pDvURN" target="_blank" rel="noopener" class="px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold shadow-sm transition-all">
+              Abrir Carpeta Drive ↗
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Repositorio Directo de los 6 Documentos (assets/drive/*.pdf) -->
+      <div class="space-y-3">
+        <div class="flex items-center justify-between text-xs font-mono text-slate-500 px-1">
+          <span class="uppercase tracking-wider font-bold text-slate-800">Documentos Fuente del Equipo (Lectura y Descarga Directa)</span>
+          <span>6 PDFs • 5.9 MB Total</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <!-- 1. Daniel Boletin 1 -->
+          <div class="swiss-card rounded-2xl p-5 flex flex-col justify-between space-y-4">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between gap-2 font-mono text-[10px]">
+                <span class="px-2 py-0.5 rounded bg-slate-900 text-white font-bold">DANIEL • GOBERNANZA</span>
+                <span class="text-slate-500">12 págs • 1.2 MB</span>
+              </div>
+              <h3 class="text-sm font-bold text-slate-900">Boletín N°1: Esquema Interno, Vesting y Soberanía</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Propone SpA matriz que custodia la IP y licencia a la operativa, esquema mixto (comisiones inmediatas + vesting 3-4 años con 1 año cliff) y matriz de 4 ramas: Terreno (Luis/Rüdiger/Pablo), Ventas (Wladimir/Pancho), UX (Cantuarias/Daniel) y Core IP (Daniel).
+              </p>
+            </div>
+            <div class="flex items-center gap-2 pt-2 border-t border-slate-200 font-mono text-[11px]">
+              <a href="assets/drive/daniel-boletin-1.pdf" target="_blank" rel="noopener" class="flex-1 text-center px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold transition-all">Abrir PDF ↗</a>
+              <a href="assets/drive/daniel-boletin-1.pdf" download class="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200 font-semibold transition-all">↓</a>
+            </div>
+          </div>
+
+          <!-- 2. Daniel Boletin 2 -->
+          <div class="swiss-card rounded-2xl p-5 flex flex-col justify-between space-y-4">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between gap-2 font-mono text-[10px]">
+                <span class="px-2 py-0.5 rounded bg-emerald-700 text-white font-bold">DANIEL • ARQUITECTURA</span>
+                <span class="text-slate-500">5 págs • 3.1 MB</span>
+              </div>
+              <h3 class="text-sm font-bold text-slate-900">Boletín N°2: Arquitectura y Ficha Técnica Digital</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Define la Ficha Técnica ("Pasaporte Digital") como semilla del sistema: "Onboarding de Camioneta" (4 preguntas en 3-5 min), generación procedural 3D, modelo biofísico FAO-56 + AGROMET y exportación automática de Carpeta Técnica CNR Ley 18.450.
+              </p>
+            </div>
+            <div class="flex items-center gap-2 pt-2 border-t border-slate-200 font-mono text-[11px]">
+              <a href="assets/drive/daniel-boletin-2.pdf" target="_blank" rel="noopener" class="flex-1 text-center px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold transition-all">Abrir PDF ↗</a>
+              <a href="assets/drive/daniel-boletin-2.pdf" download class="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200 font-semibold transition-all">↓</a>
+            </div>
+          </div>
+
+          <!-- 3. Wladimir -->
+          <div class="swiss-card rounded-2xl p-5 flex flex-col justify-between space-y-4">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between gap-2 font-mono text-[10px]">
+                <span class="px-2 py-0.5 rounded bg-sky-800 text-white font-bold">WLADIMIR • EMPRESA</span>
+                <span class="text-slate-500">23 págs • 590 KB</span>
+              </div>
+              <h3 class="text-sm font-bold text-slate-900">AgroTech: Formación Empresarial (Del Equipo a la Empresa)</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Guía completa de formalización SpA (Empresa en un Día + SII), pacto de socios y vesting 4y/1y (reserva ~10%), enfoque híbrido (pilotos pagados + suscripción), foco en <strong>1 solo segmento año 1</strong> (medianos tecnificados), 20 entrevistas antes de fijar precio y alerta sobre incompatibilidad de ventas previas con CORFO Semilla Inicia.
+              </p>
+            </div>
+            <div class="flex items-center gap-2 pt-2 border-t border-slate-200 font-mono text-[11px]">
+              <a href="assets/drive/wladimir-formacion-empresarial.pdf" target="_blank" rel="noopener" class="flex-1 text-center px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold transition-all">Abrir PDF ↗</a>
+              <a href="assets/drive/wladimir-formacion-empresarial.pdf" download class="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200 font-semibold transition-all">↓</a>
+            </div>
+          </div>
+
+          <!-- 4. Francisco -->
+          <div class="swiss-card rounded-2xl p-5 flex flex-col justify-between space-y-4">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between gap-2 font-mono text-[10px]">
+                <span class="px-2 py-0.5 rounded bg-amber-700 text-white font-bold">FRANCISCO • CLIENTE 0</span>
+                <span class="text-slate-500">5 págs • 744 KB</span>
+              </div>
+              <h3 class="text-sm font-bold text-slate-900">Preparación Interna • Cliente 0</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Checklist previo a reunión con el primer piloto real: predio de <strong>3.000 m² con +100 frutales jóvenes en formación</strong> (paltos, cítricos, carozos). Exige levantar marcas/protocolos (LoRaWAN/PLC/WiFi), definir reglas de piloto a plazo fijo (60-90 días), precio post-piloto y WhatsApp/móvil simple en vez de dashboards complejos.
+              </p>
+            </div>
+            <div class="flex items-center gap-2 pt-2 border-t border-slate-200 font-mono text-[11px]">
+              <a href="assets/drive/francisco-cliente-0.pdf" target="_blank" rel="noopener" class="flex-1 text-center px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold transition-all">Abrir PDF ↗</a>
+              <a href="assets/drive/francisco-cliente-0.pdf" download class="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200 font-semibold transition-all">↓</a>
+            </div>
+          </div>
+
+          <!-- 5. Cristian Alberto -->
+          <div class="swiss-card rounded-2xl p-5 flex flex-col justify-between space-y-4">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between gap-2 font-mono text-[10px]">
+                <span class="px-2 py-0.5 rounded bg-indigo-700 text-white font-bold">CRISTIAN ALBERTO • UX/UI</span>
+                <span class="text-slate-500">15 págs • 249 KB</span>
+              </div>
+              <h3 class="text-sm font-bold text-slate-900">Interfaz Visual AgroAlerta (Taller Práctico)</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Método práctico Mobile-First pensado para Parral/Maule: priorizar 1 alerta crítica arriba (<em>"Posible helada · Mañana 05:00"</em>), lenguaje cotidiano sin tecnicismos, estados explícitos offline/cargando, accesibilidad sin depender solo del color y prueba con usuario real sin asistirlo.
+              </p>
+            </div>
+            <div class="flex items-center gap-2 pt-2 border-t border-slate-200 font-mono text-[11px]">
+              <a href="assets/drive/cristian-interfaz-visual-agroalerta.pdf" target="_blank" rel="noopener" class="flex-1 text-center px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold transition-all">Abrir PDF ↗</a>
+              <a href="assets/drive/cristian-interfaz-visual-agroalerta.pdf" download class="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200 font-semibold transition-all">↓</a>
+            </div>
+          </div>
+
+          <!-- 6. QEPD Pablo -->
+          <div class="swiss-card rounded-2xl p-5 flex flex-col justify-between space-y-4 border-t-2 border-t-slate-400">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between gap-2 font-mono text-[10px]">
+                <span class="px-2 py-0.5 rounded bg-slate-700 text-white font-bold">PABLO (Q.E.P.D.) • BASE TI</span>
+                <span class="text-slate-500">3 págs • 9.8 KB</span>
+              </div>
+              <h3 class="text-sm font-bold text-slate-900">Estructura B2B y Viabilidad TI</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Documento fundacional de postura <strong>100% SaaS sin inventario de hardware</strong> (&gt;80% margen), foco B2B (agrónomos, exportadoras con Pasaporte Verde UE y bancos/aseguradoras), créditos Cloud ($1K–$5K USD AWS/Google) y exigencia de <strong>100% IP dentro de la SpA</strong> sin custodias externas.
+              </p>
+            </div>
+            <div class="flex items-center gap-2 pt-2 border-t border-slate-200 font-mono text-[11px]">
+              <a href="assets/drive/pablo-estructura-b2b-viabilidad-ti.pdf" target="_blank" rel="noopener" class="flex-1 text-center px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold transition-all">Abrir PDF ↗</a>
+              <a href="assets/drive/pablo-estructura-b2b-viabilidad-ti.pdf" download class="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200 font-semibold transition-all">↓</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Diagnóstico Cruzado: Consensos vs Tensiones Estructurales -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+        <!-- Consensos -->
+        <div class="lg:col-span-5 swiss-card rounded-2xl p-5 space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-200 pb-2.5">
+            <h3 class="text-sm font-bold text-slate-900 font-mono uppercase tracking-wider">Dónde Ya Hay Consenso Real</h3>
+            <span class="px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-200 text-[10px] font-mono font-bold">4 PILARES SÓLIDOS</span>
+          </div>
+          <ul class="space-y-2.5 text-xs text-slate-700 leading-relaxed">
+            <li class="p-2.5 rounded-xl bg-emerald-50/50 border border-emerald-200/70">
+              <strong class="text-slate-900 block">1. Vehículo SpA + Vesting 4y / 1y Cliff</strong>
+              Daniel y Wladimir coinciden exactamente en constituir SpA con pacto de socios, vesting para evitar <em>free-riders</em> y reserva de equity (~10%).
+            </li>
+            <li class="p-2.5 rounded-xl bg-emerald-50/50 border border-emerald-200/70">
+              <strong class="text-slate-900 block">2. Canal WhatsApp + Móvil Ultra-Simple</strong>
+              Daniel, Francisco, Cristian y Pablo coinciden en que el agricultor no quiere dashboards complejos en PC: necesita alertas accionables por WhatsApp / celular en segundos.
+            </li>
+            <li class="p-2.5 rounded-xl bg-emerald-50/50 border border-emerald-200/70">
+              <strong class="text-slate-900 block">3. Dolor Prioritario: Agua + Heladas (Maule/Parral)</strong>
+              Todos convergen en resolver balance de riego/estrés hídrico y heladas tempranas usando modelos biofísicos sobre datos climáticos y satelitales.
+            </li>
+            <li class="p-2.5 rounded-xl bg-emerald-50/50 border border-emerald-200/70">
+              <strong class="text-slate-900 block">4. Apalancamiento No Dilutivo (CORFO + Cloud)</strong>
+              Consenso total en partir livianos con créditos Cloud (AWS/Google) y fondos públicos (CORFO/FIA/Start-Up Chile) antes de quemar capital propio.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tensiones Estructurales -->
+        <div class="lg:col-span-7 swiss-card rounded-2xl p-5 space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-200 pb-2.5">
+            <h3 class="text-sm font-bold text-slate-900 font-mono uppercase tracking-wider">5 Tensiones Estructurales Sin Resolver (Decisiones Urgentes)</h3>
+            <span class="px-2 py-0.5 rounded bg-amber-50 text-amber-800 border border-amber-200 text-[10px] font-mono font-bold">REQUIERE DEFINICIÓN</span>
+          </div>
+          <div class="space-y-2.5 text-xs text-slate-700 leading-relaxed">
+            <div class="p-3 rounded-xl bg-amber-50/50 border border-amber-200">
+              <strong class="text-slate-900 block">Tensión 1 — 100% Software vs Hardware / Sensores en Terreno</strong>
+              <em>Pablo (Q.E.P.D.)</em> exige congelar hardware e ir 100% SaaS satelital (&gt;80% margen). <em>Wladimir</em> habla de "equipo + plataforma" (venta/comodato de sensores). <em>Francisco</em> prepara Cliente 0 evaluando sensores existentes (LoRaWAN/PLC) y <em>Daniel</em> propone kits Plug-and-Play vía Luis/Rüdiger sin asumir inventario propio. <strong>Decisión:</strong> Software-First obligatorio, con hardware solo como integrador sin stock ni garantía asumida por AgroTech.
+            </div>
+            <div class="p-3 rounded-xl bg-amber-50/50 border border-amber-200">
+              <strong class="text-slate-900 block">Tensión 2 — Custodia de IP: Matriz Externa vs 100% dentro de la SpA</strong>
+              <em>Daniel (Boletín 1)</em> propone SpA matriz que custodia IP y licencia a la operativa. <em>Pablo</em> rechaza licencias externas y pide 100% IP en la SpA; <em>Wladimir</em> también asume IP a nombre de la empresa (requisito clave para CORFO/VCs). <strong>Decisión:</strong> Resolver si habrá holding o SpA única con cesión de IP + cláusula de licencia/reversión antes de postular a CORFO.
+            </div>
+            <div class="p-3 rounded-xl bg-amber-50/50 border border-amber-200">
+              <strong class="text-slate-900 block">Tensión 3 — Quién es realmente el Primer Cliente (Segmento Año 1)</strong>
+              Coexisten 4 focos distintos: <strong>Cliente 0 de Francisco</strong> (3.000 m², +100 frutales jóvenes mixtos), <strong>Daniel</strong> (parceleros e informes rápidos + clientes de Luis), <strong>Wladimir</strong> (medianos con riego tecnificado, 1 solo segmento año 1) y <strong>Pablo</strong> (B2B exportadoras/agrónomos/bancos). <strong>Decisión:</strong> Usar Cliente 0 como laboratorio técnico controlado (no como segmento comercial definitivo) y elegir 1 único ICP pagador.
+            </div>
+            <div class="p-3 rounded-xl bg-rose-50/60 border border-rose-200">
+              <strong class="text-slate-900 block">Tensión 4 — Vacío de Infraestructura TI & Operación tras la partida de Pablo (Q.E.P.D.)</strong>
+              En los documentos, <em>Pablo</em> cumplía dos roles críticos: <strong>Cloud/APIs/WhatsApp</strong> y <strong>articulación logística en terreno</strong>. Hoy nadie en la matriz declarada cubre explícitamente backend cloud, integraciones Modbus/PLC/LoRaWAN ni envío productivo WhatsApp API.
+            </div>
+            <div class="p-3 rounded-xl bg-sky-50/60 border border-sky-200">
+              <strong class="text-slate-900 block">Tensión 5 — Timing de Ventas vs Bases CORFO Semilla Inicia</strong>
+              <em>Wladimir</em> advierte con precisión (pág. 14): <strong>Semilla Inicia exige no tener ventas previas</strong> (tasa de selección ~1,6%: 50 de 3.074). Cobrar un piloto formal o emitir factura antes de tiempo inhabilita la postulación a Inicia.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plan de Acción Inmediato (Esta Semana) -->
+      <div class="swiss-card rounded-2xl p-5 space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200 pb-2.5">
+          <h3 class="text-sm font-bold text-slate-900 font-mono uppercase tracking-wider">Hoja de Ruta de 5 Acuerdos para Cerrar Esta Semana</h3>
+          <span class="text-[11px] font-mono text-slate-500">De equipo en conversación → empresa operativa</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-3 font-mono text-xs">
+          <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
+            <span class="text-[10px] font-bold text-slate-500">ACUERDO 01</span>
+            <strong class="text-slate-900 block">Postura Producto</strong>
+            <p class="text-[11px] text-slate-600 font-sans">Fijar Software-First + compatibilidad con hardware de terceros (sin inventario propio).</p>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
+            <span class="text-[10px] font-bold text-slate-500">ACUERDO 02</span>
+            <strong class="text-slate-900 block">Protocolo Cliente 0</strong>
+            <p class="text-[11px] text-slate-600 font-sans">Ejecutar checklist de Francisco con plazo de 60-90 días, sin comprometer facturación pre-CORFO.</p>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
+            <span class="text-[10px] font-bold text-slate-500">ACUERDO 03</span>
+            <strong class="text-slate-900 block">Cobertura TI / Cloud</strong>
+            <p class="text-[11px] text-slate-600 font-sans">Reasignar las funciones Cloud/APIs/WhatsApp que estaban en Pablo o definir reemplazo técnico.</p>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
+            <span class="text-[10px] font-bold text-slate-500">ACUERDO 04</span>
+            <strong class="text-slate-900 block">20 Entrevistas</strong>
+            <p class="text-[11px] text-slate-600 font-sans">Wladimir y Pancho validan dolor real y disposición de pago en 1 solo segmento antes de fijar tarifa.</p>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
+            <span class="text-[10px] font-bold text-slate-500">ACUERDO 05</span>
+            <strong class="text-slate-900 block">SpA & Pacto de IP</strong>
+            <p class="text-[11px] text-slate-600 font-sans">Cerrar dedicación real de cada miembro, vesting 4y/1y y estructura legal compatible con CORFO.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ==================== PESTAÑA: INFRAESTRUCTURA & SALUD ==================== -->
     <section id="tab_infra" class="space-y-6 hidden">
       <div class="flex flex-wrap items-center justify-between gap-3">
@@ -3281,7 +3526,7 @@ flowchart TD
 
     function setTab(tab) {
       currentTab = tab;
-      const allTabs = ['landing', 'fondos', 'gobernanza', 'ciencia', 'comercial', 'informes', 'boardroom', 'infra', 'holding', 'spa', 'coop', 'obsidian', 'agents'];
+      const allTabs = ['landing', 'fondos', 'gobernanza', 'ciencia', 'comercial', 'informes', 'boardroom', 'radiografia', 'infra', 'holding', 'spa', 'coop', 'obsidian', 'agents'];
       
       allTabs.forEach(t => {
         const btn = document.getElementById(`tabBtn_${t}`);
