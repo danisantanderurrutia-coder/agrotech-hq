@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>AgroTech HQ • Redirigiendo...</title>
+  <script>
+    (function () {
+      var path = window.location.pathname || '/';
+      var base = path.indexOf('/agrotech-hq') === 0 ? '/agrotech-hq/' : '/';
+      var slug = path.replace(/^\/agrotech-hq\/?/, '').replace(/^\/+|\/+$/g, '').toLowerCase();
+      var valid = {
+        'inicio': 'inicio',
+        'fondos': 'fondos',
+        'gobernanza': 'gobernanza',
+        'ciencia': 'ciencia',
+        'comercial': 'comercial',
+        'mrv': 'mrv',
+        'informes': 'mrv',
+        'war-room': 'war-room',
+        'boardroom': 'war-room',
+        'radiografia': 'radiografia',
+        'equipo': 'equipo',
+        'infra': 'infra'
+      };
+      var hash = valid[slug] ? ('#' + valid[slug]) : '';
+      window.location.replace(window.location.origin + base + hash);
+    })();
+  </script>
+</head>
+<body></body>
+</html>

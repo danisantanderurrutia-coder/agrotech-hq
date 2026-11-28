@@ -3781,7 +3781,77 @@ flowchart TD
           compileCurrentReport(false);
         }
       }
+
+      if (arguments[1] !== false && TAB_TO_SLUG[tab]) {
+        const targetHash = '#' + TAB_TO_SLUG[tab];
+        if (window.location.hash !== targetHash) {
+          try {
+            history.pushState(null, '', targetHash);
+          } catch (e) {
+            window.location.hash = targetHash;
+          }
+        }
+      }
     }
+
+    const TAB_TO_SLUG = {
+      landing: 'inicio',
+      fondos: 'fondos',
+      gobernanza: 'gobernanza',
+      ciencia: 'ciencia',
+      comercial: 'comercial',
+      informes: 'mrv',
+      boardroom: 'war-room',
+      radiografia: 'radiografia',
+      equipo: 'equipo',
+      infra: 'infra',
+      holding: 'holding',
+      spa: 'spa',
+      coop: 'coop',
+      obsidian: 'obsidian',
+      agents: 'agents'
+    };
+
+    const SLUG_TO_TAB = {
+      '': 'landing',
+      inicio: 'landing',
+      landing: 'landing',
+      fondos: 'fondos',
+      gobernanza: 'gobernanza',
+      ciencia: 'ciencia',
+      comercial: 'comercial',
+      mrv: 'informes',
+      informes: 'informes',
+      'war-room': 'boardroom',
+      'war-room-3d': 'boardroom',
+      boardroom: 'boardroom',
+      radiografia: 'radiografia',
+      equipo: 'equipo',
+      infra: 'infra',
+      holding: 'holding',
+      spa: 'spa',
+      coop: 'coop',
+      obsidian: 'obsidian',
+      agents: 'agents'
+    };
+
+    function resolveTabFromLocation() {
+      const rawHash = (window.location.hash || '').replace(/^#\/?/, '').trim().toLowerCase();
+      const params = new URLSearchParams(window.location.search);
+      const rawQuery = (params.get('tab') || '').trim().toLowerCase();
+      const candidate = rawHash || rawQuery;
+      return SLUG_TO_TAB[candidate] || null;
+    }
+
+    window.addEventListener('hashchange', () => {
+      const targetTab = resolveTabFromLocation() || 'landing';
+      if (targetTab !== currentTab) setTab(targetTab, false);
+    });
+
+    window.addEventListener('popstate', () => {
+      const targetTab = resolveTabFromLocation() || 'landing';
+      if (targetTab !== currentTab) setTab(targetTab, false);
+    });
 
     const IS_LOCAL_HQ_BACKEND = ['localhost', '127.0.0.1'].includes(window.location.hostname);
 
@@ -4678,7 +4748,12 @@ flowchart TD
       printWindow.document.close();
     }
 
-    // Auto-inicialización al cargar
+    // Auto-inicialización al cargar + resolución de slug activo
+    const initialTabFromSlug = resolveTabFromLocation();
+    if (initialTabFromSlug && initialTabFromSlug !== 'landing') {
+      setTab(initialTabFromSlug, false);
+    }
+
     loadTemplatesCatalog();
     refreshLiveTelemetry();
     loadGeneratedReports();
